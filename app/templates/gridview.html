@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> -->
+    <link rel="stylesheet" href="..//static/css/style.css">
+</head>
+<style>
+    #floor{
+        margin-top: -30px;
+        margin-left: 200px;
+    }
+
+    .rooms{
+        height: 40px;
+        width: 200px;
+        background-color: #2D3956;
+        color: white;
+        text-align: center;
+    }
+    #firstfloor{
+        margin-left: 180px;
+        text-align: center;
+        display: none;
+    }
+    #secondfloor{
+        margin-left: 180px;
+
+        display: none;
+        text-align: center;
+    }
+    
+    #thirdfloor{
+        margin-left: 180px;
+
+        text-align: center;
+        display: none;
+
+    }
+    #groundfloor{
+        margin-left: 180px;
+
+        display: none;
+        text-align: center;
+    }
+    #rt{
+        text-align: center;
+        display: none;
+    }
+</style>
+<body>
+    <div class="topnav">
+        <a class="active" href="/home">Home</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </div>
+
+    <div class="col shadow p-5 mb-5 bg-white rounded">
+        <div class="form-group row">
+            <b><label for="Floor">Floor</label></b>
+            <div class="col-sm-10 mb-3">
+
+                <select class="form-control" id="floor">
+                <option value="1">Ground Floor</option>
+                <option value="2">First Floor</option>
+                <option value="3">Second Floor</option>
+                <option value="4">Third Floor</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="col shadow p-3 mb-5 bg-white rounded" id="rt">
+        
+        <table class="table table-borderless" id="groundfloor">
+            <tbody>
+              <tr>
+                <!-- <th scope="row"></th> -->
+                <td><button class="btn rooms">101</button></td>
+                <td><button class="btn rooms">102</button></td>
+                <td><button class="btn rooms">103</button></td>
+                <td><button class="btn rooms">104</button></td>
+                <td><button class="btn rooms">105</button></td>
+              </tr>
+              <tr>
+                <td><button class="btn rooms">106</button></td>
+                <td><button class="btn rooms">107</button></td>
+                <td><button class="btn rooms">108</button></td>
+                <td><button class="btn rooms">109</button></td>
+                <td><button class="btn rooms">110</button></td>
+              </tr>
+            </tbody>
+          </table>
+
+          
+         <table class="table table-borderless" id="firstfloor">
+              <tbody>
+                  <tr>
+                      <!-- <th scope="row"></th>  -->
+                      <td><button class="btn rooms">201</button></td>
+                      <td><button class="btn rooms">202</button></td>
+                <td><button class="btn rooms">203</button></td>
+                <td><button class="btn rooms">204</button></td>
+                <td><button class="btn rooms">205</button></td>
+              </tr>
+              <tr>
+                <td><button class="btn rooms">206</button></td>
+                <td><button class="btn rooms">207</button></td>
+                <td><button class="btn rooms">208</button></td>
+                <td><button class="btn rooms">209</button></td>
+                <td><button class="btn rooms">210</button></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table class="table table-borderless" id="secondfloor">
+            <tbody>
+              <tr>
+                <!-- <th scope="row"></th> -->
+                <td><button class="btn rooms">301</button></td>
+                <td><button class="btn rooms">302</button></td>
+                <td><button class="btn rooms">303</button></td>
+                <td><button class="btn rooms">304</button></td>
+                <td><button class="btn rooms">305</button></td>
+              </tr>
+              <tr>
+                <td><button class="btn rooms">306</button></td>
+                <td><button class="btn rooms">307</button></td>
+                <td><button class="btn rooms">308</button></td>
+                <td><button class="btn rooms">309</button></td>
+                <td><button class="btn rooms">310</button></td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table table-borderless" id="thirdfloor">
+            <tbody>
+              <tr>
+                <!-- <th scope="row"></th> -->
+                <td><button class="btn rooms">401</button></td>
+                <td><button class="btn rooms">402</button></td>
+                <td><button class="btn rooms">403</button></td>
+                <td><button class="btn rooms">404</button></td>
+                <td><button class="btn rooms">405</button></td>
+              </tr>
+              <tr>
+                <td><button class="btn rooms">406</button></td>
+                <td><button class="btn rooms">407</button></td>
+                <td><button class="btn rooms">408</button></td>
+                <td><button class="btn rooms">409</button></td>
+                <td><button class="btn rooms">410</button></td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</body>
+
+<script>
+    const floorSelect = document.getElementById('floor');
+    const groundfloorTable = document.getElementById('groundfloor');
+    const firstFloorTable = document.getElementById('firstfloor');
+    const secondFloorTable = document.getElementById('secondfloor');
+    const thirdFloorTable = document.getElementById('thirdfloor');
+
+    floorSelect.addEventListener('change', function () {
+        document.getElementById('rt').style.display = "block"
+        firstFloorTable.style.display = 'none';
+        secondFloorTable.style.display = 'none';
+        thirdFloorTable.style.display = 'none';
+        groundfloorTable.style.display = 'none';
+
+        if (floorSelect.value === '1') {
+            groundfloorTable.style.display = 'block';
+        } 
+        else if (floorSelect.value === '2') {
+            document.getElementById('firstfloor').style.display = 'block';
+        }
+        else if (floorSelect.value === '3') {
+            document.getElementById('secondfloor').style.display = 'block';
+        } 
+        else if (floorSelect.value === '4') {
+            document.getElementById('thirdfloor').style.display = 'block';
+        }
+    });
+</script>
+
+</html>

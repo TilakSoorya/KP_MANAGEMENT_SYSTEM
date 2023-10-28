@@ -4,8 +4,8 @@ import re
 import time
 
 def is_valid_email(email_address):
-   match = re.match(r"^[a-zA-Z0-9-_]+@[a-zA-Z0-9]+\.[a-z]{1,3}$", email_address)
-   return bool(match)
+   match = re.match(r"^[a-zA-Z0-9]{1,10}+@[a-zA-Z0-9]{1,5}+\.[a-z]{1,3}$", email_address)
+   return True
 
 
 @app.route('/')
@@ -39,8 +39,8 @@ def store_data():
         return render_template('signup.html',msg='Please Fill All the Fields!!')
     elif len(roll)!= 10:
         return render_template('signup.html',msg='Invalid Roll Number!!')
-    elif is_valid_email(email):
-        return render_template('signup.html',msg='Enter a Valid Email!!')
+    # elif is_valid_email(email):
+    #     return render_template('signup.html',msg='Enter a Valid Email!!')
     elif cpass!=password:
         return render_template('signup.html',msg='Password and Confirm Password are not save!')
     else:

@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="..//static/css/style.css">
 </head>
 <style>
+    .roomArrangment{
+      margin-left: auto;
+      margin-right: auto;
+    }
     #floor{
         margin-top: -30px;
         margin-left: 200px;
@@ -78,19 +82,18 @@
         <table class="table table-borderless" id="groundfloor">
             <tbody>
               <tr>
-                <!-- <th scope="row"></th> -->
-                <td><button class="btn rooms">101</button></td>
-                <td><button class="btn rooms">102</button></td>
-                <td><button class="btn rooms">103</button></td>
-                <td><button class="btn rooms">104</button></td>
-                <td><button class="btn rooms">105</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)" value="101" >101</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)" value="101" >102</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)" value="101" >103</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)" value="101" >104</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)" value="101" >105</button></td>
               </tr>
               <tr>
-                <td><button class="btn rooms">106</button></td>
-                <td><button class="btn rooms">107</button></td>
-                <td><button class="btn rooms">108</button></td>
-                <td><button class="btn rooms">109</button></td>
-                <td><button class="btn rooms">110</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)" >106</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)" >107</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)" >108</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)" >109</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)" >110</button></td>
               </tr>
             </tbody>
           </table>
@@ -100,18 +103,18 @@
               <tbody>
                   <tr>
                       <!-- <th scope="row"></th>  -->
-                      <td><button class="btn rooms">201</button></td>
-                      <td><button class="btn rooms">202</button></td>
-                <td><button class="btn rooms">203</button></td>
-                <td><button class="btn rooms">204</button></td>
-                <td><button class="btn rooms">205</button></td>
+                      <td><button class="btn rooms" onclick="getRoomNoID(this)">201</button></td>
+                      <td><button class="btn rooms" onclick="getRoomNoID(this)">202</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)" >203</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)" >204</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)" >205</button></td>
               </tr>
               <tr>
-                <td><button class="btn rooms">206</button></td>
-                <td><button class="btn rooms">207</button></td>
-                <td><button class="btn rooms">208</button></td>
-                <td><button class="btn rooms">209</button></td>
-                <td><button class="btn rooms">210</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)">206</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)">207</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)">208</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)">209</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)">210</button></td>
               </tr>
             </tbody>
           </table>
@@ -120,18 +123,18 @@
             <tbody>
               <tr>
                 <!-- <th scope="row"></th> -->
-                <td><button class="btn rooms">301</button></td>
-                <td><button class="btn rooms">302</button></td>
-                <td><button class="btn rooms">303</button></td>
-                <td><button class="btn rooms">304</button></td>
-                <td><button class="btn rooms">305</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)" >301</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)" >302</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)" >303</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)" >304</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)" >305</button></td>
               </tr>
               <tr>
-                <td><button class="btn rooms">306</button></td>
-                <td><button class="btn rooms">307</button></td>
-                <td><button class="btn rooms">308</button></td>
-                <td><button class="btn rooms">309</button></td>
-                <td><button class="btn rooms">310</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)" >306</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)" >307</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)" >308</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)" >309</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)" >310</button></td>
               </tr>
             </tbody>
           </table>
@@ -139,22 +142,37 @@
             <tbody>
               <tr>
                 <!-- <th scope="row"></th> -->
-                <td><button class="btn rooms">401</button></td>
-                <td><button class="btn rooms">402</button></td>
-                <td><button class="btn rooms">403</button></td>
-                <td><button class="btn rooms">404</button></td>
-                <td><button class="btn rooms">405</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)" >402</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)" >401</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)" >403</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)" >404</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)" >405</button></td>
               </tr>
               <tr>
-                <td><button class="btn rooms">406</button></td>
-                <td><button class="btn rooms">407</button></td>
-                <td><button class="btn rooms">408</button></td>
-                <td><button class="btn rooms">409</button></td>
-                <td><button class="btn rooms">410</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)" >406</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)" >407</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)" >408</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)" >409</button></td>
+                <td><button class="btn rooms" onclick="getRoomNoID(this)" >410</button></td>
               </tr>
             </tbody>
           </table>
     </div>
+
+    <div id='roomArrangment' class="roomArrangment col-sm-6" style='visibility:hidden;' >
+      <div class = "row mb-2">
+      <button id="f1" class="btn btn-secondary col-sm-3 mx-1" onclick="getCompID(this)" >FAN 1</button>
+      <button id="f2" class="btn btn-secondary col-sm-3 mx-1" onclick="getCompID(this)" >FAN 2</button>
+      <button id="f3" class="btn btn-secondary col-sm-3 mx-1" onclick="getCompID(this)" >FAN 3</button>
+      </div>
+      <button id="proj" class="btn btn-secondary col-sm-8" onclick="getCompID(this)">PROJECTOR</button>
+      <div class = "row mt-2">
+        <button id="l1" class="btn btn-secondary col-sm-3 mx-1" onclick="getCompID(this)">LIGHT 1</button>
+        <button id="l2" class="btn btn-secondary col-sm-3 mx-1" onclick="getCompID(this)">LIGHT 2</button>
+        <button id="l3" class="btn btn-secondary col-sm-3 mx-1" onclick="getCompID(this)">LIGHT 3</button>
+        </div>
+    </div>
+    <button class="btn btn-success" onclick="SubmitFault()" >Submit Complaint</button>
 </body>
 
 <script>
@@ -163,6 +181,8 @@
     const firstFloorTable = document.getElementById('firstfloor');
     const secondFloorTable = document.getElementById('secondfloor');
     const thirdFloorTable = document.getElementById('thirdfloor');
+    
+    document.cookie.split(";").forEach(function(c) { document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); });
 
     floorSelect.addEventListener('change', function () {
         document.getElementById('rt').style.display = "block"
@@ -173,17 +193,53 @@
 
         if (floorSelect.value === '1') {
             groundfloorTable.style.display = 'block';
+            document.cookie = "floor=1";
         } 
         else if (floorSelect.value === '2') {
             document.getElementById('firstfloor').style.display = 'block';
-        }
+            document.cookie = "floor=2";
+          }
         else if (floorSelect.value === '3') {
             document.getElementById('secondfloor').style.display = 'block';
-        } 
+            document.cookie = "floor=3";
+          } 
         else if (floorSelect.value === '4') {
             document.getElementById('thirdfloor').style.display = 'block';
-        }
+            document.cookie = "floor=4";
+          }
     });
+    function getRoomNoID(e){
+      document.cookie = ("roomNo="+e.value);
+      document.getElementById('roomArrangment').style.visibility = 'visible';
+    }
+    function getCompID(e){
+      let cookie = {};
+      var allComp = [];
+      document.cookie.split(';').forEach(function(el) {
+        let [key,value] = el.split('=');
+        var k = key.trim()
+        if(k == 'compId'){
+          allComp = JSON.parse(value);
+        }
+      })
+      allComp.push(e.id);
+      document.cookie = ("compId="+JSON.stringify(allComp));
+      document.getElementById(e.id).style.background = "green";
+    }
+    function SubmitFault(){
+      var res = {};
+      document.cookie.split(';').forEach(function(el) {
+        let [key,value] = el.split('=');
+        var k = key.trim()
+        if(k == 'compId'){
+          res[k] = JSON.parse(value);
+        }
+        else{
+          res[k] = JSON.parse(value);
+        }
+      })
+      console.log(res);
+    }
 </script>
 
 </html>
